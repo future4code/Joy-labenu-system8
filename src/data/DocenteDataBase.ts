@@ -12,9 +12,9 @@ export class DocenteDataBase extends BaseDatabase {
         return await BaseDatabase.connection("labenusystem_docente").select()
     }
 
-    public async updateTurmaDocente(idClass:number, turma_id:number){
-        return await BaseDatabase.connection("labenusystem_docente")
+    public async updateTurmaDocente(idDocente:number, turma_id:number){
+        await BaseDatabase.connection("labenusystem_docente")
         .update({turma_id: turma_id})
-        .where({ id: idClass })
+        .where({ id: idDocente })
     }
 }

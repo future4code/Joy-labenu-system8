@@ -3,6 +3,7 @@ import { postClass } from "./endpoints/postClass"
 import { getClass } from "./endpoints/getClass"
 import { postDocente } from "./endpoints/Docentes/PostDocente";
 import { getDocentes } from "./endpoints/Docentes/GetDocentes";
+import { putDocente } from "./endpoints/Docentes/PutDocente";
 
 
 app.post("/class", postClass)
@@ -21,4 +22,4 @@ app.post("/teacher", postDocente)
 
 app.get("/teacher", getDocentes)
 
-app.post("/teacher/:id/class", )
+app.post("/teacher/:id/class", putDocente)

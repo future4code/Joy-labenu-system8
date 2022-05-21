@@ -11,10 +11,7 @@ export async function getDocentes(
 
         const createDocente = new DocenteDataBase()
 
-        const result = await createDocente.getDocentes()
-
-        
-        console.log(result)
+        const result = await createDocente.getDocentes()      
         
         res.status(200).send(result);
     } catch (error : any){
