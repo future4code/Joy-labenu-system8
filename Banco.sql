@@ -1,6 +1,6 @@
 CREATE TABLE labenusystem_turma(
 	id INT PRIMARY KEY AUTO_INCREMENT,
-	nome_turma VARCHAR(255) UNIQUE NOT NULL,
+	nome VARCHAR(255) UNIQUE NOT NULL,
 	docentes LONGTEXT,
     estudantes LONGTEXT,
 	modulo INT DEFAULT 0

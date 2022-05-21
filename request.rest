@@ -2,6 +2,9 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
-    "nomeTurma": "Teste1"
-
+    "nome": "Teste9",
+    "modulo": 4
 } 
+
+###
+GET http://localhost:3003/class/active  
