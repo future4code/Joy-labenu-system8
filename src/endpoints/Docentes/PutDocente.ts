@@ -17,14 +17,10 @@ export async function putDocente(
             throw new CustomError("Insira o ID da turma", 406)
         }
 
-
         const updateDocente = new DocenteDataBase()
-
         
-        await updateDocente.updateTurmaDocente(+idDocente, turma_id)
-
         
-
+        await updateDocente.updateTurmaDocente(+idDocente , turma_id)
         
         res.status(200).send(`Docente transferidopara para a turma ${turma_id} com sucesso!!`);
     } catch (error : any){

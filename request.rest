@@ -26,9 +26,9 @@ Content-Type: application/json
 GET http://localhost:3003/teacher
 
 ###
-PUT http://localhost:3003/teacher/1/class
+PUT http://localhost:3003/teacher/4/class
 Content-Type: application/json
 
 {
-    "turma_id": 2,
+    "turma_id": 1
 } 

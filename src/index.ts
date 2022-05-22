@@ -22,4 +22,4 @@ app.post("/teacher", postDocente)
 
 app.get("/teacher", getDocentes)
 
-app.post("/teacher/:id/class", putDocente)
+app.put("/teacher/:id/class", putDocente)
