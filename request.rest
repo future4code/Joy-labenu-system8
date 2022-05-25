@@ -2,29 +2,34 @@ POST http://localhost:3003/class
 Content-Type: application/json
 
 {
-    "nome": "Teste9",
-    "modulo": 4
+    "nome": "Teste1",
+    "modulo": 1
 } 
 
 ###
-GET http://localhost:3003/class/active 
+GET http://localhost:3003/class/active  
 
 ###
-POST http://localhost:3003/student
+POST http://localhost:3003/teacher
 Content-Type: application/json
 
 {
-    "nome": "Teste45",
-    "email": "teste45@gmail.com",
-    "dataNacimento": "10/01/1999",
-    "turmaId": 8,
-    "hobbies": ["Ler"]
+    "nome": "Teste5",
+    "email": "teste5@gmail.com",
+    "dara_nasc": "2011-10-10",
+    "turma_id": 1,
+    "especialidades": "JS"
+
 } 
 
 ###
-PUT http://localhost:3003/student/11/class
+GET http://localhost:3003/teacher
+
+###
+PUT http://localhost:3003/teacher/4/class
 Content-Type: application/json
 
 {
-    "turmaId": 5
-}
+    "turma_id": 1
+} 
+
