@@ -7,4 +7,24 @@ Content-Type: application/json
 } 
 
 ###
-GET http://localhost:3003/class/active  
+GET http://localhost:3003/class/active 
+
+###
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "nome": "Teste45",
+    "email": "teste45@gmail.com",
+    "dataNacimento": "10/01/1999",
+    "turmaId": 8,
+    "hobbies": ["Ler"]
+} 
+
+###
+PUT http://localhost:3003/student/11/class
+Content-Type: application/json
+
+{
+    "turmaId": 5
+}

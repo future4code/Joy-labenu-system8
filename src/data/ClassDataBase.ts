@@ -27,4 +27,5 @@ export class CharacterClass extends BaseDatabase {
         .update({docentes: estudantes})
         .where({ id: idClass })
     }
+
 }
