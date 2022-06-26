@@ -1,0 +1,35 @@
+POST http://localhost:3003/class 
+Content-Type: application/json
+
+{
+    "nome": "Teste1",
+    "modulo": 1
+} 
+
+###
+GET http://localhost:3003/class/active  
+
+###
+POST http://localhost:3003/teacher
+Content-Type: application/json
+
+{
+    "nome": "Teste5",
+    "email": "teste5@gmail.com",
+    "dara_nasc": "2011-10-10",
+    "turma_id": 1,
+    "especialidades": "JS"
+
+} 
+
+###
+GET http://localhost:3003/teacher
+
+###
+PUT http://localhost:3003/teacher/4/class
+Content-Type: application/json
+
+{
+    "turma_id": 1
+} 
+
